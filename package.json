@@ -1,0 +1,43 @@
+{
+  "name": "pkgeval",
+  "version": "0.1.0",
+  "description": "Evaluates the given expression and returns the result.",
+  "main": "pkgeval.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/download/pkgeval.git"
+  },
+  "scripts": {
+    "test": "mocha pkgeval.spec.js",
+    "test-watch": "mocha --watch pkgeval.spec.js"
+  },
+  "test": {
+    "eval": "{eval 3 > 5}",
+    "eval-indirect": "{eval {pkg test.data} > 5}",
+    "data": "8"
+  },
+  "keywords": [
+    "package.json",
+    "configuration",
+    "pkgcfg",
+    "pkgenv"
+  ],
+  "author": "Stijn de Witt",
+  "license": "CC-BY-4.0",
+  "bugs": {
+    "url": "https://github.com/download/pkgeval/issues"
+  },
+  "homepage": "https://github.com/download/pkgeval",
+  "dependencies": {
+    "pkgcfg": "^0.3.4"
+  },
+  "peerDependencies": {
+    "pkgcfg": "^0.3.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.0.2",
+    "picolog": "^1.0.4",
+    "pkgcfg": "^0.3.3"
+  }
+}
