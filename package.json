@@ -1,7 +1,7 @@
 {
   "name": "pkgeval",
-  "version": "0.1.0",
-  "description": "Evaluates the given expression and returns the result.",
+  "version": "0.4.0",
+  "description": "pkgcfg tag to evaluate Javascript expressions in package.json",
   "main": "pkgeval.js",
   "repository": {
     "type": "git",
@@ -19,8 +19,8 @@
   "keywords": [
     "package.json",
     "configuration",
-    "pkgcfg",
-    "pkgenv"
+    "eval",
+    "pkgcfg"
   ],
   "author": "Stijn de Witt",
   "license": "CC-BY-4.0",
@@ -29,15 +29,11 @@
   },
   "homepage": "https://github.com/download/pkgeval",
   "dependencies": {
-    "pkgcfg": "^0.3.4"
-  },
-  "peerDependencies": {
-    "pkgcfg": "^0.3.0"
+    "pkgcfg": "0.4"
   },
   "devDependencies": {
     "chai": "^3.5.0",
     "mocha": "^3.0.2",
-    "picolog": "^1.0.4",
-    "pkgcfg": "^0.3.3"
+    "picolog": "^1.0.4"
   }
 }
