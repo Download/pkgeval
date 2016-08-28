@@ -1,4 +1,4 @@
-# pkgeval <sup><sub>0.4.0</sub></sup>
+# pkgeval <sup><sub>0.5.0</sub></sup>
 ## One configuration to rule them all
 
 [![npm](https://img.shields.io/npm/v/pkgeval.svg?maxAge=2592000)](https://npmjs.com/package/pkgeval)
