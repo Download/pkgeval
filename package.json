@@ -29,7 +29,7 @@
   },
   "homepage": "https://github.com/download/pkgeval",
   "dependencies": {
-    "pkgcfg": "0.x"
+    "pkgcfg": "^0.7.0"
   },
   "devDependencies": {
     "chai": "^3.5.0",
