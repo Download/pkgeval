@@ -1,6 +1,6 @@
 {
   "name": "pkgeval",
-  "version": "0.5.0",
+  "version": "0.7.0",
   "description": "pkgcfg tag to evaluate Javascript expressions in package.json",
   "main": "pkgeval.js",
   "repository": {
