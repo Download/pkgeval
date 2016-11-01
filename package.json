@@ -1,6 +1,6 @@
 {
   "name": "pkgeval",
-  "version": "0.7.0",
+  "version": "0.8.0",
   "description": "pkgcfg tag to evaluate Javascript expressions in package.json",
   "main": "pkgeval.js",
   "repository": {
@@ -29,11 +29,11 @@
   },
   "homepage": "https://github.com/download/pkgeval",
   "dependencies": {
-    "pkgcfg": "^0.7.0"
+    "pkgcfg": "^0.8.1"
   },
   "devDependencies": {
     "chai": "^3.5.0",
-    "mocha": "^3.0.2",
-    "picolog": "^1.0.4"
+    "mocha": "^3.1.2",
+    "ulog": "^1.0.0"
   }
 }
