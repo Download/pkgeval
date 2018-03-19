@@ -1,4 +1,4 @@
-# pkgeval <sup><sub>0.8.0</sub></sup>
+# pkgeval <sup><sub>0.9.0</sub></sup>
 ## One configuration to rule them all
 
 [![npm](https://img.shields.io/npm/v/pkgeval.svg?maxAge=2592000)](https://npmjs.com/package/pkgeval)
@@ -9,7 +9,7 @@
 
 <sup><sub><sup><sub>.</sub></sup></sub></sup>
 
-**[pkgcfg](https://npmjs.com/package/pkgcfg) tag to evaluate Javascript expressions in package.json.**
+**[pkgcfg](https://npmjs.com/package/pkgcfg) tag to evaluate Javascript expressions.**
 
 <sup><sub><sup><sub>.</sub></sup></sub></sup>
 
@@ -19,18 +19,18 @@ npm install --save pkgeval
 ```
 
 ## Registration
-The `{eval}` tag from `pkgeval` will be auto-discovered by `pkgcfg` because it
-follows the package naming convention. You can also register it explicitly by
-adding `'eval'` to the array of `pkgcfg` `tags` in `package.json`. See the pkgcfg
-docs on [using external tags](https://www.npmjs.com/package/pkgcfg#using-external-tags)
+The `eval{}` tag from `pkgeval` will be auto-discovered by `pkgcfg` because it follows 
+the package naming convention. You can also register it explicitly by adding `'eval'` 
+to the array of `pkgcfg` `tags` in `package.json`. See the pkgcfg docs on 
+[using external tags](https://www.npmjs.com/package/pkgcfg#using-external-tags)
 for more information.
 
 ## Usage
 _package.json:_
 ```json
 {
-  "eval": "{eval 3 > 5}",
-  "evalIndirect": "{eval {pkg data} > 5}",
+  "eval": "eval{3 > 5}",
+  "evalIndirect": "eval{${data} > 5}",
   "data": "8",
 }
 ```
@@ -42,7 +42,7 @@ console.info(cfg.test.eval) // false
 console.info(cfg.test.evalIndirect); // true
 ```
 
-## {eval expr}
+## eval{expr}
 Evaluate Javascript expressions.
 
 ### expr

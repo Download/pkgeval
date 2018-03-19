@@ -1,6 +1,6 @@
 {
   "name": "pkgeval",
-  "version": "0.8.0",
+  "version": "0.9.0",
   "description": "pkgcfg tag to evaluate Javascript expressions in package.json",
   "main": "pkgeval.js",
   "repository": {
@@ -12,8 +12,8 @@
     "test-watch": "mocha --watch pkgeval.spec.js"
   },
   "test": {
-    "eval": "{eval 3 > 5}",
-    "eval-indirect": "{eval {pkg test.data} > 5}",
+    "eval": "eval{3 > 5}",
+    "eval-indirect": "eval{${test.data} > 5}",
     "data": "8"
   },
   "keywords": [
@@ -29,11 +29,11 @@
   },
   "homepage": "https://github.com/download/pkgeval",
   "dependencies": {
-    "pkgcfg": "^0.8.1"
+    "pkgcfg": "^0.9.0",
+    "ulog": "^1.1.0"
   },
   "devDependencies": {
-    "chai": "^3.5.0",
-    "mocha": "^3.1.2",
-    "ulog": "^1.0.0"
+    "chai": "^4.1.2",
+    "mocha": "^5.0.4"
   }
 }

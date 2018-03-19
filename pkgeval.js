@@ -1,10 +1,9 @@
-﻿var log; try {log = require('ulog')('pkgeval')} catch(e) {}
-
+﻿var log = require('ulog')('pkgeval')
 var pkgcfg = require('pkgcfg');
 
-function pkgeval(pkg, node, expr) {
+function pkgeval(root, parents, node, expr) {
 	if (expr) {
-		log && log.log(log.name + ': evaluating code: ' + expr)
+		log.debug(log.name + ': evaluating expression: ' + expr)
 		try {return eval(expr)}
 		catch(e) {throw new Error('Error evaluating expression (' + expr + '): ' + e.message);}
 	}
@@ -13,4 +12,4 @@ function pkgeval(pkg, node, expr) {
 pkgcfg.registry.register('eval', pkgeval);
 module.exports = pkgeval;
 
-log && log.log('Initialized ' + log.name)
+log.debug('Initialized ' + log.name)
